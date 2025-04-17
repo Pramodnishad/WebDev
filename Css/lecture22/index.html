@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            border: 2px solid black;
+            height: 650px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            --primary-color:red;
+            background: aquamarine;
+            height: 330px;
+            width: 330px;
+            border: 1px solid var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+            box-shadow:inset -5px -10px 10px brown;
+        }
+        img{
+            height: 150px;
+        }
+        .head{
+            /* text-shadow: -2px -2px 1px brown; */
+            text-shadow: whitesmoke 12px 15px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img src="rana.jpg" alt="" />
+        <h2 class="head">Hello Pramod</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          fuga aliquid amet maxime rerum officiis aspernatur odio, ad laborum
+          eius.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(161, 145, 250);
+        align-content: center;
+        justify-items: center;
+      }
+      .card {
+        height: 700px;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: whitesmoke;
+        border-radius: 20px;
+        gap: 30px;
+      }
+      .card img {
+        height: 250px;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+      .card p {
+        width: 70%;
+      }
+      .amountBox {
+        background-color: rgb(170, 209, 249);
+        width: 70%;
+        height: 50px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .leftBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+      }
+      .leftBox img {
+        height: 30px;
+        width: 30px;
+        border-radius: 10px;
+      }
+      #submit {
+        background-color: rgb(29, 20, 85);
+        width: 70%;
+        height: 50px;
+        border-radius: 10px;
+        color: whitesmoke;
+        font-size: 15px;
+        font-weight: 600;
+        box-shadow: 0px 0px 10px rgb(222, 85, 26);
+      }
+      .cancel {
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+      }
+      @media (max-width: 870px) {
+        .amountBox {
+          display: flex;
+          flex-direction: column;
+          height: 70px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+        @media (max-width: 1124px) {
+          .card {
+            width: 500px;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="music.jpg" alt="" />
+        <h1>Order Summary</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+          laborum atque voluptates dignissimos ducimus omnis quis dolorum sint
+          veritatis, optio deleniti quas quo esse ad alias qui, suscipit quia
+          nemo.
+        </p>
+        <div class="amountBox">
+          <div class="leftBox">
+            <img src="icon.jpg" alt="" />
+            <div>
+              <p>Amount</p>
+              <p>$99.9/year</p>
+            </div>
+          </div>
+          <div class="rightBox">
+            <a href="">Change</a>
+          </div>
+        </div>
+        <button id="submit">Proceed to payment</button>
+        <a class="cancel" href="#">Cancel Order</a>
+      </div>
+    </div>
+  </body>
+</html>

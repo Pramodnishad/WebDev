@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #eae1ea;
+  background-image: linear-gradient(0deg, #f4eff4 0%, #ecf8f9 100%);
+}
+.navcontainer {
+  min-height: 70px;
+  /* background-color: rgb(106, 106, 202); */
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#navlist {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 25px;
+}
+nav li {
+  list-style: none;
+}
+.navLogo {
+  font-size: 30px;
+  color: whitesmoke;
+  font-weight: 600;
+}
+a {
+  text-decoration: none;
+  color: blueviolet;
+  font-weight: 600;
+  font-size: 25px;
+}
+.navItems {
+  display: flex;
+  gap: 40px;
+}
+
+.maincontent {
+  width: 70vw;
+  justify-self: center;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px black;
+}
+section {
+  display: flex;
+  justify-content: space-around;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+img {
+  height: 350px;
+  border-radius: 20px;
+}
+h2 {
+  animation: 5s linear 1s infinite alternate running heading;
+  position: relative;
+  font-size: 35px;
+  color: #2a7b9b;
+}
+@keyframes heading {
+  from {
+    top: 0;
+    left: 0;
+  }
+  to {
+    top: 0;
+    left: 650px;
+  }
+}
+ol li {
+  transition: all 3s linear 0;
+}
+ol li:hover {
+  transform: scale(1.1);
+}
+.rightBox {
+  position: relative;
+  transition: all 2s linear 1s;
+}
+.rightBox:hover{
+  transform: scale(1.1);
+}
+img {
+  
+  /* position: relative; */
+}
+img:hover {
+  /* transform: scale(1.2); */
+  /* transform: rotate(360deg); */
+}
+.overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(36, 34, 34, 0.713);
+  border-radius: 20px;
+  opacity: 0;
+  transition: all 1s linear;
+}
+.overlay:hover {
+  opacity: 1;
+
+}
+.overlay span {
+  font-size: 25px;
+  color: whitesmoke;
+}
+.footerBox {
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  background-blend-mode: multiply, multiply;
+  min-height: 50px;
+
+  align-content: center;
+align-self: flex-end;
+}
+
+.footerBox p {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  align-content: center;
+}
