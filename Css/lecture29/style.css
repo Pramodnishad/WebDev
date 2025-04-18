@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  .header_container {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .card_container {
+    display: grid;
+    grid-template-columns: repeat(3, 300px); /* always 3 columns */
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%; /* full available inside the column */
+    max-width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(163, 161, 161, 0.7);
+    background-color: #fff;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: auto; /* center each card inside its grid cell */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card_imag {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  #random-title {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.2rem;
+  }
+  
+  #text {
+    text-align: center;
+    padding: 0 10px;
+    font-size: 0.95rem;
+  }
+  
+  .footer_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .profile_card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .profile_detail {
+    font-size: 12px;
+  }
+  
+  .profile_imag {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* RESPONSIVE PART */
+  @media (max-width: 950px) {
+    .card_container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+  }
+  
+  @media (max-width: 620px) {
+    .card_container {
+      grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+  }
+  
