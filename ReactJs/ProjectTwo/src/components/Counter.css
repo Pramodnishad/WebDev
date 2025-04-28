@@ -1,0 +1,14 @@
+.counter-container{
+    background-color: rgb(84, 93, 130);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    color: whitesmoke;
+}
+#btn{
+    padding: 10px;
+    border-radius: 10px;
+}
